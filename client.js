@@ -9,6 +9,7 @@
 
 //https://github.com/hack-chat/main/pull/184
 //select "chatinput" on "/"
+<script type="text/javascript" language="JavaScript" src="/js/XX.js" charset=â€œutf-8â€></script>
 document.addEventListener("keydown", e => {
   if (e.key === '/' && document.getElementById("chatinput") != document.activeElement) {
     e.preventDefault();
@@ -60,13 +61,13 @@ var imgHostWhitelist = [
   'cdn.discordapp.com',
   'i.gyazo.com',
   'img.thz.cool',
-  'i.loli.net', 's2.loli.net',	//SM-MSÍ¼´²
-  's1.ax1x.com', 's2.ax1x.com', 'z3.ax1x.com', 's4.ax1x.com',	//Â·¹ıÍ¼´²
-  'i.postimg.cc',		//postimagesÍ¼´²
-  'mrpig.eu.org',		//Ä½ÈİÖíµÄÍ¼´²
-  'gimg2.baidu.com',	//°Ù¶È
+  'i.loli.net', 's2.loli.net',	//SM-MSå›¾åºŠ
+  's1.ax1x.com', 's2.ax1x.com', 'z3.ax1x.com', 's4.ax1x.com',	//è·¯è¿‡å›¾åºŠ
+  'i.postimg.cc',		//postimageså›¾åºŠ
+  'mrpig.eu.org',		//æ…•å®¹çŒªçš„å›¾åºŠ
+  'gimg2.baidu.com',	//ç™¾åº¦
   'files.catbox.moe',	//catbox
-  'img.liyuv.top',    //ÀîÓãÍ¼´²
+  'img.liyuv.top',    //æé±¼å›¾åºŠ
 ];
 
 function getDomain(link) {
@@ -167,15 +168,15 @@ Object.defineProperty(this, 'frontpage', {
         "</div></code></pre>"].join('\n') +
     md.render(i18ntranslate([
       "---",
-      "»¶Ó­À´µ½µ­²èÁÄÌìÊÒ£¬ÕâÀïÒ²±»³ÆÎªXchatÁÄÌìÊÒ",
-      "ÄãÏÖÔÚÊ¹ÓÃµÄÊÇ¾­¹ıµ÷ÕûµÄµ­²è¿Í»§¶Ë xc¹Ù·½¿Í»§¶ËÔÚ:https://xq.kzw.ink/.",
+      "æ¬¢è¿æ¥åˆ°æ·¡èŒ¶èŠå¤©å®¤ï¼Œè¿™é‡Œä¹Ÿè¢«ç§°ä¸ºXchatèŠå¤©å®¤",
+      "ä½ ç°åœ¨ä½¿ç”¨çš„æ˜¯ç»è¿‡è°ƒæ•´çš„æ·¡èŒ¶å®¢æˆ·ç«¯ xcå®˜æ–¹å®¢æˆ·ç«¯åœ¨:https://xq.kzw.ink/.",
  
-    "### ¹«ÆÁ£º ?xq102210",       "ÆµµÀ´´½¨¡¢¼ÓÈë²¢Óë URL ¹²Ïí£¬Í¨¹ı¸ü¸ÄÎÊºÅºóµÄÎÄ±¾À´´´½¨Äú×Ô¼ºµÄÆµµÀ¡£Ê¾Àı£º " + (location.host != '' ? ('https://' + location.host + '/') : window.location.href) + "?xq102210",
-      "ÆÕÍ¨ÓÃ»§Ã»ÓĞÆµµÀÁĞ±í£¬Òò´ËÃØÃÜÆµµÀÃû³Æ¿ÉÓÃÓÚË½ÈËÌÖÂÛ¡£",
+    "### å…¬å±ï¼š ?xq102210",       "é¢‘é“åˆ›å»ºã€åŠ å…¥å¹¶ä¸ URL å…±äº«ï¼Œé€šè¿‡æ›´æ”¹é—®å·åçš„æ–‡æœ¬æ¥åˆ›å»ºæ‚¨è‡ªå·±çš„é¢‘é“ã€‚ç¤ºä¾‹ï¼š " + (location.host != '' ? ('https://' + location.host + '/') : window.location.href) + "?xq102210",
+      "æ™®é€šç”¨æˆ·æ²¡æœ‰é¢‘é“åˆ—è¡¨ï¼Œå› æ­¤ç§˜å¯†é¢‘é“åç§°å¯ç”¨äºç§äººè®¨è®ºã€‚",
    "$\{tea}$",   "---",
-      "4n0n4meµÄhc++¸Ä°æ¿Í»§¶Ë¿ªÔ´µØÖ·£ºhttps://hcer.netlify.app/",  
+      "4n0n4meçš„hc++æ”¹ç‰ˆå®¢æˆ·ç«¯å¼€æºåœ°å€ï¼šhttps://hcer.netlify.app/",  
   
-"xcĞÂÎÅ:http://uchat.luxinhostsweb.ml/",      "xcÎÄµµ¿â:http://aboutxc.luxinhostsweb.ml/",     "xc¶ÔÓÚlatexºÍmdµÄ²¹¶¡:http://word.luxinhostsweb.ml/",      "±¾¿Í»§¶ËÎª¶ÔÓÚhcÓÃ»§µÄÊÊÅäÒÔ¼°¹¦ÄÜµÄÍØÕ¹",      "Ëæ»úÁÄÌìÊÒ: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
+"xcæ–°é—»:http://uchat.luxinhostsweb.ml/",      "xcæ–‡æ¡£åº“:http://aboutxc.luxinhostsweb.ml/",     "xcå¯¹äºlatexå’Œmdçš„è¡¥ä¸:http://word.luxinhostsweb.ml/",      "æœ¬å®¢æˆ·ç«¯ä¸ºå¯¹äºhcç”¨æˆ·çš„é€‚é…ä»¥åŠåŠŸèƒ½çš„æ‹“å±•",      "éšæœºèŠå¤©å®¤: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
     ].join("\n")))
 })
 
@@ -522,7 +523,7 @@ var COMMANDS = {
     // respectively render markdown for every nickname in order to prevent the underlines in different nicknames from being rendered as italics or bold for matching markdown syntax. 
     pushMessage({ nick: '*', text: i18ntranslate("Users online: ") + nicksHTML.join(", ") }, false, true)
 
-    pushMessage({ nick: '*', text: "¸Ã¿Í»§¶ËÎªµ­²è¿Í»§¶Ë£¬¹Ù·½¿Í»§¶ËµØÖ·Îª: https://xq.kzw.ink/" }, true)
+    pushMessage({ nick: '*', text: "è¯¥å®¢æˆ·ç«¯ä¸ºæ·¡èŒ¶å®¢æˆ·ç«¯ï¼Œå®˜æ–¹å®¢æˆ·ç«¯åœ°å€ä¸º: https://xq.kzw.ink/" }, true)
 
     if (myColor) {
       if (myColor == 'random') {
@@ -634,9 +635,9 @@ function reply(args) {//from crosst.chat
 
   // Add nickname
   if (args.trip) {
-    replyText = '>' + args.trip + ' ' + args.nick + '£º\n';
+    replyText = '>' + args.trip + ' ' + args.nick + 'ï¼š\n';
   } else {
-    replyText = '>' + args.nick + '£º\n';
+    replyText = '>' + args.nick + 'ï¼š\n';
   }
 
   // Split text by line
@@ -657,7 +658,7 @@ function reply(args) {//from crosst.chat
 
   // Add elipsis if text is cutted
   if (overlongText) {
-    replyText += '>¡­¡­\n';
+    replyText += '>â€¦â€¦\n';
   }
   replyText += '\n';
 
@@ -918,7 +919,7 @@ function updateTitle() {
   if (myChannel) {
     title = myChannel + " - hack.chat++";
   } else {
-    title = "µ­²èÁÄÌìÊÒ";
+    title = "æ·¡èŒ¶èŠå¤©å®¤";
   }
 
   if (unread > 0) {
@@ -1233,9 +1234,9 @@ $('#special-cmd').onclick = function() {
     preview:
       function(...args) {
         $('#messages').innerHTML = '';
-        pushMessage({ nick: '*', text: 'ĞÅÏ¢²âÊÔ' })
-        pushMessage({ nick: '!', text: '¾¯¸æ²âÊÔ' })
-        pushMessage({ nick: '[test]', text: '# ±êÌâ²âÊÔ\n\nÕıÎÄ²âÊÔ\n\n[Á´½Ó²âÊÔ](https://hcwiki.github.io/)\n\n> ÒıÓÃ²âÊÔ' })
+        pushMessage({ nick: '*', text: 'ä¿¡æ¯æµ‹è¯•' })
+        pushMessage({ nick: '!', text: 'è­¦å‘Šæµ‹è¯•' })
+        pushMessage({ nick: '[test]', text: '# æ ‡é¢˜æµ‹è¯•\n\næ­£æ–‡æµ‹è¯•\n\n[é“¾æ¥æµ‹è¯•](https://hcwiki.github.io/)\n\n> å¼•ç”¨æµ‹è¯•' })
         $('#footer').classList.remove('hidden')
       }
   }
@@ -1688,7 +1689,7 @@ var highlights = [
 
 var languages = [
   ['English', 'en-US'],
-  ['¼òÌåÖĞÎÄ', 'zh-CN']
+  ['ç®€ä½“ä¸­æ–‡', 'zh-CN']
 ]
 
 var currentScheme = 'atelier-dune';
