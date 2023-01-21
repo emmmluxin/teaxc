@@ -9,7 +9,6 @@
 
 //https://github.com/hack-chat/main/pull/184
 //select "chatinput" on "/"
-<script type="text/javascript" language="JavaScript" src="/js/XX.js" charset=“UTF-8”></script>
 document.addEventListener("keydown", e => {
   if (e.key === '/' && document.getElementById("chatinput") != document.activeElement) {
     e.preventDefault();
