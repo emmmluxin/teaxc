@@ -173,9 +173,9 @@ Object.defineProperty(this, 'frontpage', {
     "### 公屏： ?xq102210",       "频道创建、加入并与 URL 共享，通过更改问号后的文本来创建您自己的频道。示例： " + (location.host != '' ? ('https://' + location.host + '/') : window.location.href) + "?xq102210",
       "普通用户没有频道列表，因此秘密频道名称可用于私人讨论。",
    "$\{tea}$",   "---",
-      "4n0n4me的hc++改版客户端开源地址：https://hcer.netlify.app/",  
-  
-"xc新闻:http://uchat.luxinhostsweb.ml/",      "xc文档库:http://aboutxc.luxinhostsweb.ml/",     "xc对于latex和md的补丁:http://word.luxinhostsweb.ml/",      "本客户端为对于hc用户的适配以及功能的拓展",      "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
+      "感谢名单:404 a fish (分前后[挨打])",     
+      
+"xc新闻:http://uchat.luxinhostsweb.ml/",      "xc文档库:http://aboutxc.luxinhostsweb.ml/",     "xc对于latex和md的补丁:http://word.luxinhostsweb.ml/",     "4n0n4me的hc++改版客户端开源地址：https://hcer.netlify.app/",     "本客户端为对于hc用户的适配以及功能的拓展",     "开源地址:https://github.com/emmmluxin/teaxc",     "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
     ].join("\n")))
 })
 
