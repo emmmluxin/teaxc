@@ -175,7 +175,7 @@ Object.defineProperty(this, 'frontpage', {
    "$\{tea}$",   "---",
       "感谢名单:404 a fish (分前后[挨打])",     
       
-"[XC新闻](http://uchat.luxinhostsweb.ml/)",      "[XC文档库](http://aboutxc.luxinhostsweb.ml/)",     "---",     "[xc对于latex和md的补丁](http://word.luxinhostsweb.ml/)",    "[(python)机器人制作库](https://github.com/MrZhang365/XChat-Lib-for-Python)",    "[(JavaScript)机器人制作库](https://greendebug.github.io)",   "[hc++客户端开源地址](https://hcer.netlify.app/)",     "本客户端为对于hc用户的适配以及功能的拓展",     "[开源地址](https://github.com/emmmluxin/teaxc)",     "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
+"[XC新闻](http://uchat.luxinhostsweb.ml/)",      "[XC文档库](http://aboutxc.luxinhostsweb.ml/)",     "---",     "[xc对于latex和md的补丁](http://word.luxinhostsweb.ml/)",    "[(python)机器人制作库](https://github.com/MrZhang365/XChat-Lib-for-Python)",    "[(JavaScript)机器人制作库](https://greendebug.github.io)",   "[hc++客户端开源地址](https://hcer.netlify.app/)",     "本客户端为对于hc用户的适配以及功能的拓展",     "[星云cdn](https://cdn.nuee.cn/)",     "[开源地址](https://github.com/emmmluxin/teaxc)",     "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
     ].join("\n")))
 })
 
