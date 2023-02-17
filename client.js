@@ -166,8 +166,8 @@ Object.defineProperty(this, 'frontpage', {
     ["<pre><code><div style=\"margin: auto; width: fit-content;\">" +
         "</div></code></pre>"].join('\n') +
     md.render(i18ntranslate([
-      "### 淡茶"
       "---",
+      "### 淡茶"
       "欢迎来到淡茶聊天室，这里是经过调整的XChat聊天室。旨在为HackChat用户的适配以及部分功能的拓展。",
       "xc官方客户端：[XChat](https://xq.kzw.ink/)",
  
