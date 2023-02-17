@@ -166,16 +166,17 @@ Object.defineProperty(this, 'frontpage', {
     ["<pre><code><div style=\"margin: auto; width: fit-content;\">" +
         "</div></code></pre>"].join('\n') +
     md.render(i18ntranslate([
+      "### 淡茶"
       "---",
-      "欢迎来到淡茶聊天室，这里也被称为Xchat聊天室",
-      "你现在使用的是经过调整的淡茶客户端 xc官方客户端在:[XChat](https://xq.kzw.ink/)",
+      "欢迎来到淡茶聊天室，这里是经过调整的XChat聊天室。旨在为HackChat用户的适配以及部分功能的拓展。",
+      "xc官方客户端：[XChat](https://xq.kzw.ink/)",
  
-    "### 公屏： ?xq102210",       "频道创建、加入并与 URL 共享，通过更改问号后的文本来创建您自己的频道。示例： " + (location.host != '' ? ('https://' + location.host + '/') : window.location.href) + "?xq102210",
+    "__公屏： ?xq102210__",       "频道创建、加入XChat共享，通过更改问号后的文本来创建您自己的频道。示例： " + (location.host != '' ? ('https://' + location.host + '/') : window.location.href) + "?xq102210",
       "普通用户没有频道列表，因此秘密频道名称可用于私人讨论。",
    "$\{tea}$",   "---",
-      "感谢名单:404 a fish (分前后[挨打])",     
+      "感谢名单:4n0n4me a MelonFish (分前后[挨打])",     
       
-"[XC新闻](http://uchat.luxinhostsweb.ml/)",      "[XC文档库](http://aboutxc.luxinhostsweb.ml/)",     "---",     "[xc对于latex和md的补丁](http://word.luxinhostsweb.ml/)",    "[(python)机器人制作库](https://github.com/MrZhang365/XChat-Lib-for-Python)",    "[(JavaScript)机器人制作库](https://greendebug.github.io)",   "[hc++客户端开源地址](https://hcer.netlify.app/)",     "本客户端为对于hc用户的适配以及功能的拓展",     "[星云cdn](https://cdn.nuee.cn/)",     "[开源地址](https://github.com/emmmluxin/teaxc)",     "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
+"[XC新闻](http://uchat.luxinhostsweb.ml/)",      "[XC文档库](http://aboutxc.luxinhostsweb.ml/)",     "[xc对于latex和md的补丁](http://word.luxinhostsweb.ml/)",    "---",    "[(python)机器人制作库](https://github.com/MrZhang365/XChat-Lib-for-Python)",    "[(JavaScript)机器人制作库](https://greendebug.github.io)",   "[hc++客户端开源地址](https://hcer.netlify.app/)",     "[星云cdn](https://cdn.nuee.cn/)",     "[开源地址](https://github.com/emmmluxin/teaxc)",     "随机聊天室: " + ((shouldGetInfo) || info.public ? ("?" + Math.random().toString(36).substr(2, 8)) : "")
     ].join("\n")))
 })
 
