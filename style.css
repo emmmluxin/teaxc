@@ -1,3 +1,16 @@
+@font-face
+{
+  font-family: myFont;
+  src: url(/fonts/fontawa.woff);
+}
+:root {
+  color-scheme: dark!important;
+}
+* {
+  outline: none;
+  line-height: 2;
+  font-family: "Consolas","Microsoft Yahei UI";
+}
 body {
   padding: 0;
   margin: 0;
@@ -8,7 +21,6 @@ body {
 body,
 input,
 textarea {
-  font-family: 'DejaVu Sans Mono', monospace;
   font-size: 12px;
   -o-tab-size: 4;
   -moz-tab-size: 4;
