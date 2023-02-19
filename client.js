@@ -398,7 +398,7 @@ function join(channel, oldNick) {
           // The user cancelled the prompt in some manner
           shouldConnect = false;
           shouldAutoReconnect = false;
-          pushMessage({ nick: '!', text: "You cancelled joining. Press enter at the input field to reconnect." })
+          pushMessage({ nick: '!', text: "加入频率过高" })
         }
       }
     }
@@ -420,7 +420,7 @@ function join(channel, oldNick) {
     if (shouldAutoReconnect) {
       if (wasConnected) {
         wasConnected = false;
-        pushMessage({ nick: '!', text: "Server disconnected. Attempting to reconnect. . ." });
+        pushMessage({ nick: '!', text: "服务器卡了，或者你掉线，刷新重试或按发送键重试" });
       }
 
       window.setTimeout(function() {
@@ -434,7 +434,7 @@ function join(channel, oldNick) {
       window.setTimeout(function() {
         if (!wasConnected) {
           shouldAutoReconnect = false;
-          pushMessage({ nick: '!', text: "Failed to connect to server. When you think there is chance to succeed in reconnecting, press enter at the input field to reconnect." })
+          pushMessage({ nick: '!', text: "无法连接到服务器。你认为有机会成功重新连接时，可以按 Enter 键重新连接。" })
         }
       }, 2000);
     }
@@ -451,7 +451,7 @@ function join(channel, oldNick) {
           purgatory = false
           usersClear()
           p = document.createElement('p')
-          p.textContent = `You may be kicked or moved to this channel by force to channel ?${args.channel}. Unable to get full user list. `
+          p.textContent = `你可能被踢或者是移动到了： channel ?${args.channel}. 无法获取完整的用户列表。 `
           $('#users').appendChild(p)
           pushMessage({ nick: '!', text: `Unexpected Channel ?${args.channel} . You may be kicked or moved to this channel by force. ` })
         } else {
@@ -461,7 +461,7 @@ function join(channel, oldNick) {
       } else if (isInChannel) {
         if (purgatory && myChannel != 'purgatory') {// you are moved by a mod from purgatory to where you want to be at
           purgatory = false
-          pushMessage({ nick: '!', text: `You are now at ?${args.channel} . A mod has moved you. ` })
+          pushMessage({ nick: '!', text: `你现在在 ?${args.channel} . 一位管理员移动了你. ` })
         } else if (args.channel == 'purgatory') {
           purgatory = true
         }
@@ -915,7 +915,7 @@ function updateTitle() {
 
   var title;
   if (myChannel) {
-    title = myChannel + " - hack.chat++";
+    title = myChannel + " - teachat";
   } else {
     title = "淡茶聊天室";
   }
@@ -936,7 +936,7 @@ $('#chatinput').onkeydown = function(e) {
     e.preventDefault();
 
     if (!wasConnected) {
-      pushMessage({ nick: '*', text: "Attempting to reconnect. . ." })
+      pushMessage({ nick: '*', text: "正在尝试重新连接。。。" })
       join(myChannel);
     }
 
@@ -957,7 +957,7 @@ $('#chatinput').onkeydown = function(e) {
 
       if (isAnsweringCaptcha && text != text.toUpperCase()) {
         text = text.toUpperCase()
-        pushMessage({ nick: '*', text: 'Automatically converted into upper case by client.' })
+        pushMessage({ nick: '*', text: '由客户端自动转换为大写。' })
       }
 
       if (purgatory) {
@@ -1794,5 +1794,5 @@ if (myChannel == '') {
   join(myChannel);
 }
 
-let a = 'HC++ Made by 4n0n4me at hcer.netlify.app'
+let a = 'HC++ Made by 4n0n4me at hcer.netlify.app  这是404做的awa'
 console.log(a)
