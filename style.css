@@ -1,7 +1,7 @@
 @font-face
 {
   font-family: myFont;
-  src: url(/fonts/Ali_Puhui_Medium.woff);
+  src: url(/fonts/Droid_Sans_Mono.woff);
 }
 :root {
   color-scheme: dark!important;
